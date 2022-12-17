@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysMon", "SysMon.csproj", "{2A358A2F-E572-4A69-B15C-524B70B76DEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A358A2F-E572-4A69-B15C-524B70B76DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A358A2F-E572-4A69-B15C-524B70B76DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A358A2F-E572-4A69-B15C-524B70B76DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A358A2F-E572-4A69-B15C-524B70B76DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94590ECB-8C56-46CF-A2F7-B06016C47213}
+	EndGlobalSection
+EndGlobal
