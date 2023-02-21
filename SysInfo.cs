@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Management;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SysMon
 {
     public partial class SysInfo : UserControl
     {
+        string key = String.Empty;
+
         public SysInfo()
         {
             InitializeComponent();
+            Init();
         }
 
         private void GetInfo(string key, ListView list)
@@ -92,10 +88,15 @@ namespace SysMon
             }
         }
 
+        private void Init()
+        {
+            key = "Win32_Processor";
+            GetInfo(key, listView1);
+        }
+
         private void chosebar_Click(object sender, EventArgs e)
         {
-            string key = string.Empty;
-
+           
             switch (chosebar.SelectedItem.ToString())
             {
                 case "Процессор":
@@ -114,9 +115,41 @@ namespace SysMon
                     key = "Win32_DiskDrive";
                     break;
 
-                //default:
-                //    key = "Win32_DiskDrive";
-                //    break;
+                case "Логические диски":
+                    key = "Win32_LogicalDisk";
+                    break;
+
+                case "Чипсет":
+                    key = "Win32_IDEController";
+                    break;
+
+                case "Батарея":
+                    key = "Win32_Battery";
+                    break;
+
+                case "Биос":
+                    key = "Win32_BIOS";
+                    break;
+
+                case "Кэш":
+                    key = "Win32_CacheMemory";
+                    break;
+
+                case "USB":
+                    key = "Win32_USBController";
+                    break;
+
+                case "Клавиатура":
+                    key = "Win32_Keyboard";
+                    break;
+
+                case "Сеть":
+                    key = "Win32_NetworkAdapter";
+                    break;
+
+                case "Пользователь":
+                    key = "Win32_Account";
+                    break;
             }
             GetInfo(key, listView1);
         }

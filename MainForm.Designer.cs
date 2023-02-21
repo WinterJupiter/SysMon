@@ -56,7 +56,6 @@
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(99, 582);
             this.menu.TabIndex = 0;
-            this.menu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // sysinfo
             // 
@@ -119,7 +118,6 @@
             this.head.Name = "head";
             this.head.Size = new System.Drawing.Size(841, 65);
             this.head.TabIndex = 1;
-            this.head.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // exit
             // 
@@ -145,7 +143,6 @@
             this.name.Size = new System.Drawing.Size(246, 32);
             this.name.TabIndex = 1;
             this.name.Text = "SysMonitor with Alina";
-            this.name.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // panelContain
             // 
@@ -156,7 +153,6 @@
             this.panelContain.Name = "panelContain";
             this.panelContain.Size = new System.Drawing.Size(841, 517);
             this.panelContain.TabIndex = 2;
-            this.panelContain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContain_Paint);
             // 
             // body
             // 

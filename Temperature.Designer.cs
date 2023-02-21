@@ -29,17 +29,23 @@
         private void InitializeComponent()
         {
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(841, 512);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // Temperature
             // 
@@ -48,6 +54,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Name = "Temperature";
             this.Size = new System.Drawing.Size(841, 512);
+            this.Load += new System.EventHandler(this.Temperature_Load);
             this.ResumeLayout(false);
 
         }
@@ -55,5 +62,6 @@
         #endregion
 
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

@@ -45,15 +45,14 @@
             this.chosebar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(841, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(841, 28);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.chosebar_Click);
             // 
             // labelchose
             // 
             this.labelchose.Name = "labelchose";
-            this.labelchose.Size = new System.Drawing.Size(185, 28);
+            this.labelchose.Size = new System.Drawing.Size(185, 25);
             this.labelchose.Text = "Показать информацию о";
             // 
             // chosebar
@@ -63,9 +62,20 @@
             "Процессор",
             "Видеокарта",
             "Диск",
-            "Оперативная память"});
+            "Логические диски",
+            "Оперативная память",
+            "Чипсет",
+            "Батарея",
+            "Биос",
+            "Кэш",
+            "USB",
+            "Клавиатура",
+            "Сеть",
+            "Пользователь"});
             this.chosebar.Name = "chosebar";
-            this.chosebar.Size = new System.Drawing.Size(200, 31);
+            this.chosebar.Size = new System.Drawing.Size(200, 28);
+            this.chosebar.Text = "Процессор";
+            this.chosebar.ToolTipText = "выберите значение";
             this.chosebar.SelectedIndexChanged += new System.EventHandler(this.chosebar_Click);
             // 
             // listView1
@@ -77,10 +87,11 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
+            this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 31);
+            this.listView1.Location = new System.Drawing.Point(0, 28);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(841, 481);
+            this.listView1.Size = new System.Drawing.Size(841, 484);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
